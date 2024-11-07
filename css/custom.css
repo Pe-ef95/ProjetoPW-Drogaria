@@ -316,3 +316,20 @@ footer .container a {
         transform: scale(1);
     }
 }
+
+/* Animação do css para o botão de carrinho */
+.animacao-carrinho {
+    animation: scaleCarrinho 0.3s ease-in-out;
+}
+
+@keyframes scaleCarrinho {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
