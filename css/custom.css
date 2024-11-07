@@ -298,5 +298,21 @@ footer .container a {
 .redes-sociais a:nth-child(2) img {
     width: 30px; /* Tamanho desejado */
     height: 30px; /* Tamanho desejado */
-   
+}
+
+/* Animação do css para o botão de favoritos */
+.animacao-favorito {
+    animation: scaleFavorito 0.3s ease-in-out;
+}
+
+@keyframes scaleFavorito {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
