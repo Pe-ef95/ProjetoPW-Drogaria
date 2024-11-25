@@ -1,0 +1,335 @@
+/* Eu te incentivo a usar as mesmas classes que eu coloquei aqui para ficar mais fácil de fazer qualquer outra mudança no site,
+altere elas se precisar, mas toma cuidado pras outras páginas não ficarem fudidas no processo* */
+
+body {
+    background-color: #F9F9F9;
+}
+
+/* Reinicializando as margens e padding do da classe container-fluid para que não fique bordas pequenas ao redor do site ou em cima do site */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+/* Aquela linha azul que usei para divisória do site */
+hr {
+    height:0.1rem;
+    border:none;
+    color:#29D2C2;
+    background-color:#29D2C2;
+}
+
+/* Referente a todos os h4 pelo site */
+h4 {
+    font-family: 'Koulen';
+}
+
+/* Estilização por toda a navbar */
+.navbar {
+    background-color: #0b274b;
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 1rem;
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+}
+
+/* Faz referência ao botão dropdown "Categorias"; é um classe colocadas nos links da navbar */
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-family: 'Koulen', 'Roboto';
+    font-size: 18px;
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #ffffff;
+    font-weight:100;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+}
+
+/* Estilos para o dropdown */
+.nav-link.dropdown-toggle {
+    position: relative;
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border-bottom: 2px solid transparent; /* Inicialmente sem underline */
+    transition: border-color 0.3s; /* Transição suave */
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+    font-size: 1.313rem; /* Ajusta o tamanho da fonte */
+}
+
+.nav-link.dropdown-toggle:hover {
+    border-bottom: 2px solid #29D2C2; /* Cor do underline ao passar o mouse ou focar */
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+}
+
+.dropdown-menu {
+    background-color: #F9F9F9; /* Cor de fundo do dropdown */
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+}
+
+.dropdown-item {
+    color: black; /* Cor do texto dos itens do dropdown */
+    font-family: 'Koulen';
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+}
+
+.dropdown-item:hover {
+    background-color: hsl(0, 0%, 89%); /* Cor de fundo ao passar o mouse */
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+}
+
+/* Referente ao id do botão de pesquisa para alterar sua aparência */
+#botaoPesquisa {
+    border-radius: 1.5rem;
+    width: 3.5rem;
+}
+
+/* Classe da imagem da logo da navbar */
+.navbar-brand {
+    padding-right: 6rem;
+}
+
+.logoDrogaria {
+    width: 2.370rem;
+}
+
+/* Referente ao id da barra de pesquisa para alterar sua aparência */
+#barraPesquisa {
+    max-width: 30rem;
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+    justify-content: center;
+}
+
+/* Referente aos botões Usuário, Carrinho e Favoritos, por isso BtnUCF */
+.BtnUCF {
+    width: 1.75rem;
+}
+
+.cfProd {
+    width: 1.5rem;
+}
+
+/* Classe de botão */
+.btn-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #29D2C2;
+    --bs-btn-border-color: #29D2C2;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #49ffed;
+    --bs-btn-hover-border-color: #29D2C2;
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #29D2C2;
+    --bs-btn-active-border-color: #29D2C2;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #29D2C2;
+    --bs-btn-disabled-border-color: #29D2C2;
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+}
+
+/* Classe de botão */
+.btn {
+    --bs-btn-padding-x: 0.375rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-family: 'Koulen';
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: #29D2C2;
+    --bs-btn-border-width: var(--bs-border-width);
+    --bs-btn-border-color: #29D2C2;
+    --bs-btn-border-radius: 0.8rem;
+    --bs-btn-hover-border-color: #29D2C2;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+}
+
+/* Imagem do produto dentro do card do carrinho */
+.imgProdCart {
+    max-width: 80%;
+    border-radius: 0.313rem;
+}
+
+/* Faz referência aos links de todo o site */
+a {
+    color: #29D2C2;
+    text-decoration: underline;
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+}
+
+/* Referente aos inputs de todo o site */
+input {
+    font-family: 'Koulen';
+}
+
+/* Referente à classe link-modificado que não me lembro aonde utlilizei, há grandes chaces de ser inútil */
+.link-modificado {
+    color: #29D2C2;
+    text-decoration: none;
+    box-sizing: border-box; /* Certifica que paddings e bordas não aumentam o tamanho do elemento */
+}
+
+.form-control {
+    border-radius: 1rem; /* Altere o valor conforme necessário */
+}
+
+.card-text {
+    font-family: 'Roboto';
+}
+
+/* CSS do rodapé */
+
+footer {
+    background-color: #0b274b;
+    width: 100%; /* Ocupa 100% da largura */
+    padding: 1.25rem 0; /* Adiciona padding para o conteúdo do footer */
+}
+
+footer .container {
+    display: flex;
+    color: white;
+    justify-content: space-between; /* Espaça os elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que os elementos se ajustem ao espaço disponível */
+    max-width: 75rem; /* Limita a largura máxima do footer */
+    margin: 0 auto; /* Centraliza o footer */
+    font-family: 'Koulen', 'Roboto';
+}
+
+footer .container ul {
+    flex: 1; /* Permite que as colunas ocupem espaço igual */
+    min-width: 12.5rem; /* Define uma largura mínima para cada coluna */
+    margin: 0.625rem; /* Espaço entre as colunas */
+    list-style-type: none; /* Remove as bolinhas da lista */
+}
+
+footer .container h3 {
+    margin-bottom: 1rem;
+    font-weight: 450;
+}
+
+footer .container .redes-sociais {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os ícones se ajustem em várias linhas, se necessário */
+}
+
+footer .container .redes-sociais img {
+    margin-right: 0.75rem;
+    width: 1.625rem; /* Ajuste o tamanho dos ícones */
+    height: 1.625rem; /* Ajuste o tamanho dos ícones */
+}
+
+footer .container ul > p {
+    margin-bottom: 2.5rem;
+    max-width: 90%; /* Limita a largura máxima do parágrafo */
+    word-wrap: break-word; /* Quebra palavras longas para evitar overflow */
+}
+
+footer .container li {
+    margin: 0.625rem 0;
+}
+
+footer .container a {
+    color: white;
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.redes-sociais img {
+    width: 26px; /* Ajuste o tamanho dos ícones */
+    height: 26px; /* Ajuste o tamanho dos ícones */
+    transition: transform 0.3s; /* Efeito de transição ao passar o mouse */
+}
+
+.redes-sociais a:hover img {
+    filter: brightness(0) saturate(100%) invert(33%) sepia(90%) saturate(532%) hue-rotate(190deg) brightness(98%) contrast(90%); /* Altere a cor ao passar o mouse */
+}
+
+.redes-sociais a img {
+    transition: filter 0.3s ease; /* Suaviza a transição */
+}
+
+.redes-sociais a:nth-child(2) img {
+    width: 30px; /* Tamanho desejado */
+    height: 30px; /* Tamanho desejado */
+}
+
+/* Animação do css para o botão de favoritos */
+.animacao-favorito {
+    animation: scaleFavorito 0.3s ease-in-out;
+}
+
+@keyframes scaleFavorito {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animação do css para o botão de carrinho */
+.animacao-carrinho {
+    animation: scaleCarrinho 0.3s ease-in-out;
+}
+
+@keyframes scaleCarrinho {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
