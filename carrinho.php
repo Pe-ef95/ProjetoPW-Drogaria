@@ -98,11 +98,15 @@
         <!-- Linha azul da divisória -->
         <hr>
 
+        <div id="cart-itens" class="col-8">
+            <!-- Aqui os produtos serão adicionados dinamicamente -->
+        </div>
+
         <div class="row">
             <div class="col">
                 <div class="container my-1">
                     <div class="card mb-3 rounded shadow-sm" style="padding: 1.5rem;">
-                        <h4 class="text-start mb-4">Carrinho - Finalizacao da compra</h4>
+                        <h4 class="text-start mb-4">Carrinho - Finalização da compra</h4>
                         <div class="row">
                             <!-- Card do produto no carrinho -->
                             <div class="col-8">
@@ -117,13 +121,13 @@
                                                     <p class="card-text mb-0">Medicamento genérico - 99mg <br> 9 comprimidos</p> <br>
                                                     <p class="card-text mb-0" style="color: gray;">Laboratório X</p>
                                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                                        <button type="button" class="btn btn-light btn-outline-dark">&lt;</button>
-                                                        <span class="px-3" style="display: flex; align-items: center; color: black; background-color: #ffffff; border: 1px solid #ddd;">
+                                                        <button type="button" class="btn btn-light btn-outline-dark" onclick="decreaseQuantity()">&lt;</button>
+                                                        <span id="productQuantity" class="px-3" style="display: flex; align-items: center; color: black; background-color: #ffffff; border: 1px solid #ddd;">
                                                             1
                                                         </span>
-                                                        <button type="button" class="btn btn-light btn-outline-dark">&gt;</button>
+                                                        <button type="button" class="btn btn-light btn-outline-dark" onclick="increaseQuantity()">&gt;</button>
                                                     </div>
-                                                    <p class="card-text mb-0" style="font-weight: bold; font-family: 'Roboto';">R$10,00</p>
+                                                    <p id="productPrice" class="card-text mb-0" style="font-weight: bold; font-family: 'Roboto';">R$10,00</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -136,9 +140,9 @@
                                         <li class="list-group-item bg-light">
                                             <h4>RESUMO DO PEDIDO</h4>
                                         </li>
-                                        <li class="list-group-item d-flex justify-content-between">Subtotal: <span style="font-family: 'Roboto';">R$10,00</span></li>
+                                        <li class="list-group-item d-flex justify-content-between">Subtotal: <span id="subtotal" style="font-family: 'Roboto';">R$10,00</span></li>
                                         <li class="list-group-item d-flex justify-content-between">Entrega: <span style="font-family: 'Roboto';">R$5,00</span></li>
-                                        <li class="list-group-item d-flex justify-content-between">Total: <span style="font-weight: bold; font-family: 'Roboto';">R$15,00</span></li>
+                                        <li class="list-group-item d-flex justify-content-between">Total: <span id="total" style="font-weight: bold; font-family: 'Roboto';">R$15,00</span></li>
                                     </ul>
                                 </div>
                                 <div class="card mb-3 rounded shadow-sm">
@@ -160,6 +164,48 @@
             </div>
         </div>
 
+        <script>
+            // Função para atualizar o subtotal, total e o preço do produto no card
+            function updatePrices() {
+                let quantity = document.getElementById("productQuantity").innerText; // Pega a quantidade do produto
+                let price = 10.00; // Preço do produto (aqui pode vir da sua base de dados ou ser dinâmico)
+
+                let productTotal = price * quantity; // Calcula o total do produto
+                let deliveryFee = 5.00; // Taxa de entrega
+                let total = productTotal + deliveryFee; // Calcula o total com entrega
+
+                // Atualiza o subtotal e total no carrinho
+                document.getElementById("subtotal").innerText = "R$" + productTotal.toFixed(2);
+                document.getElementById("total").innerText = "R$" + total.toFixed(2);
+
+                // Atualiza o preço do produto no card com base na quantidade
+                document.getElementById("productPrice").innerText = "R$" + productTotal.toFixed(2);
+            }
+
+            // Função para aumentar a quantidade
+            function increaseQuantity() {
+                let quantityElem = document.getElementById("productQuantity");
+                let quantity = parseInt(quantityElem.innerText);
+                quantityElem.innerText = quantity + 1;
+                updatePrices(); // Atualiza os preços
+            }
+
+            // Função para diminuir a quantidade
+            function decreaseQuantity() {
+                let quantityElem = document.getElementById("productQuantity");
+                let quantity = parseInt(quantityElem.innerText);
+                if (quantity > 1) {
+                    quantityElem.innerText = quantity - 1;
+                    updatePrices(); // Atualiza os preços
+                }
+            }
+
+            // Atualiza os preços quando a página carregar
+            window.onload = updatePrices;
+        </script>
+
+
+
         <hr>
 
         <div class="row">
@@ -167,8 +213,8 @@
                 <footer>
                     <div class="container" id="containerFooter">
                         <ul>
-                            <h3>Drogasss</h3>
-                            <p>Sobre nos: Somos os maiores traficantes da america latina, vendendo muitas drogas pelo nosso site</p>
+                            <h3>ECOFARMA</h3>
+                            <p>Comprometidos com a saúde e bem-estar de nossos clientes, oferecemos medicamentos, produtos de higiene e beleza com atendimento de qualidade e preços acessíveis. Nossa missão é proporcionar cuidados essenciais para você e sua família</p>
                             <div class="redes-sociais">
                                 <a href="https://www.instagram.com" target="_blank"><img class="cfProd" src="imgs/instagram.svg" alt="Instagram"></a>
                                 <a href="https://www.youtube.com" target="_blank"><img class="cfProd" src="imgs/youtube.svg" alt="YouTube"></a>

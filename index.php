@@ -198,7 +198,7 @@ if (isset($_SESSION['login_sucesso'])) {
                     <div class="card h-100" style="width: 14rem;">
                         <img src="imgs/teste.png" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
+                            <h5 class="card-title">Produto 1</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
                             <hr>
                             <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
@@ -220,7 +220,7 @@ if (isset($_SESSION['login_sucesso'])) {
                     <div class="card h-100" style="width: 14rem;">
                         <img src="imgs/teste.png" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
+                            <h5 class="card-title">Produto 2</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
                             <hr>
                             <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
@@ -235,7 +235,7 @@ if (isset($_SESSION['login_sucesso'])) {
                     <div class="card h-100" style="width: 14rem;">
                         <img src="imgs/teste.png" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
+                            <h5 class="card-title">Produto 3</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
                             <hr>
                             <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
@@ -461,7 +461,7 @@ if (isset($_SESSION['login_sucesso'])) {
         <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
             <div id="loginToast" class="toast align-items-center text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true" style="display: none;">
                 <div class="d-flex">
-                    <div class="toast-body">
+                    <div class="toast-body text-danger">
                         Por favor, faça login para adicionar produtos ao carrinho.
                     </div>
                     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -473,7 +473,7 @@ if (isset($_SESSION['login_sucesso'])) {
         <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
             <div id="successToast" class="toast align-items-center text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
-                    <div class="toast-body">
+                    <div class="toast-body text-sucess">
                         Produto adicionado ao carrinho!
                     </div>
                     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -481,73 +481,77 @@ if (isset($_SESSION['login_sucesso'])) {
             </div>
         </div>
 
+        <!-- Toast para quando o produto for removido do carrinho -->
+        <div class="toast" id="removeToast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Removido</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Produto removido do carrinho.
+            </div>
+        </div>
+
+
+
         <script>
-            // Define a variável `isUserLoggedIn` no JavaScript com o valor do PHP
+            // Define a variável `isUserLoggedIn` com o valor de PHP
             const isUserLoggedIn = <?php echo json_encode($isUserLoggedIn); ?>;
 
-            // Função para exibir o toast de erro ao tentar adicionar produto sem login
-            function adicionarAoCarrinho() {
+            // Função para adicionar/remover produto do carrinho
+            function toggleCarrinho(btn) {
                 if (!isUserLoggedIn) {
                     // Exibe o toast de erro (vermelho)
                     const loginToast = document.getElementById('loginToast');
                     const toast = new bootstrap.Toast(loginToast);
                     toast.show();
+                    return; // Não faz nada se não estiver logado
+                }
+
+                // Encontra o ícone do carrinho no botão
+                const carrinhoIcon = btn.querySelector('.carrinhoIcon');
+
+                // Verifica se o produto está no carrinho (se o botão contém a classe 'noCarrinho')
+                const isProductInCart = btn.classList.contains('noCarrinho');
+
+                if (isProductInCart) {
+                    // Produto já está no carrinho, então removemos
+                    btn.classList.remove('noCarrinho');
+
+                    // Exibe o toast de remoção (vermelho)
+                    const removeToast = document.getElementById('removeToast');
+                    const toast = new bootstrap.Toast(removeToast);
+                    toast.show();
+
+                    // Troca o ícone para refletir a remoção
+                    setTimeout(function() {
+                        carrinhoIcon.src = 'imgs/carrinho.svg'; // Substitua com o caminho correto
+                    }, 300); // Atraso para animação
                 } else {
+                    // Produto não está no carrinho, então adicionamos
+                    btn.classList.add('noCarrinho');
+
                     // Exibe o toast de sucesso (verde)
                     const successToast = document.getElementById('successToast');
                     const toast = new bootstrap.Toast(successToast);
                     toast.show();
+
+                    // Troca o ícone para refletir a adição
+                    setTimeout(function() {
+                        carrinhoIcon.src = 'imgs/carrinhoClicado.svg'; // Substitua com o caminho correto
+                    }, 300); // Atraso para animação
                 }
             }
 
-            // Código para animação dos botões de favorito (sem alterações)
-            const favoritoBtns = document.querySelectorAll('.favoritoBtn');
-            favoritoBtns.forEach(function(btn) {
-                btn.addEventListener('click', function() {
-                    const favoritoIcon = btn.querySelector('.favoritoIcon');
-                    favoritoIcon.classList.add('animacao-favorito');
-                    setTimeout(function() {
-                        if (favoritoIcon.src.includes('curtidos.svg')) {
-                            favoritoIcon.src = 'imgs/curtidosClicado.svg';
-                        } else {
-                            favoritoIcon.src = 'imgs/curtidos.svg';
-                        }
-                        favoritoIcon.classList.remove('animacao-favorito');
-                    }, 300);
-                });
-            });
-
-            // Código atualizado para animação do carrinho, com verificação de login
+            // Testar o comportamento do botão de carrinho
             const carrinhoBtns = document.querySelectorAll('.carrinhoBtn');
             carrinhoBtns.forEach(function(btn) {
                 btn.addEventListener('click', function() {
-                    // Verifica se o usuário está logado antes de fazer qualquer coisa
-                    if (!isUserLoggedIn) {
-                        const loginToast = document.getElementById('loginToast');
-                        const toast = new bootstrap.Toast(loginToast);
-                        toast.show(); // Exibe o toast de aviso
-                        return; // Não faz nada mais se não estiver logado
-                    }
-
-                    // Encontra a imagem dentro do botão clicado
-                    const carrinhoIcon = btn.querySelector('.carrinhoIcon');
-
-                    // Adiciona animação ao ícone
-                    carrinhoIcon.classList.add('animacao-carrinho');
-
-                    // Troca a imagem com um pequeno delay para o efeito de animação
-                    setTimeout(function() {
-                        if (carrinhoIcon.src.includes('carrinho.svg')) {
-                            carrinhoIcon.src = 'imgs/carrinhoClicado.svg';
-                        } else {
-                            carrinhoIcon.src = 'imgs/carrinho.svg';
-                        }
-                        // Remove a classe de animação após a troca
-                        carrinhoIcon.classList.remove('animacao-carrinho');
-                    }, 300); // Tempo da animação em ms
+                    toggleCarrinho(btn);
                 });
             });
         </script>
+
 
 
         <hr>
