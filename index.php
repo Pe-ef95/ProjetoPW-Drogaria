@@ -457,8 +457,9 @@ if (isset($_SESSION['login_sucesso'])) {
             </div>
         </div>
 
+        <!-- Toast escondido inicialmente -->
         <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-            <div id="loginToast" class="toast align-items-center text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+            <div id="loginToast" class="toast align-items-center text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true" style="display: none;">
                 <div class="d-flex">
                     <div class="toast-body">
                         Por favor, faça login para adicionar produtos ao carrinho.
@@ -470,13 +471,15 @@ if (isset($_SESSION['login_sucesso'])) {
 
         <script>
             // Define a variável `isUserLoggedIn` no JavaScript com o valor do PHP
-
             const isUserLoggedIn = <?php echo json_encode($isUserLoggedIn); ?>;
 
-            // Função para adicionar ao carrinho (já configurada)
+            // Função para exibir o toast de erro ao tentar adicionar produto sem login
             function adicionarAoCarrinho() {
                 if (!isUserLoggedIn) {
-                    const toast = new bootstrap.Toast(document.getElementById('loginToast'));
+                    // Exibe o toast apenas quando o botão é clicado
+                    const loginToast = document.getElementById('loginToast');
+                    loginToast.style.display = 'block'; // Torna o toast visível
+                    const toast = new bootstrap.Toast(loginToast);
                     toast.show();
                 } else {
                     alert("Produto adicionado ao carrinho!");
@@ -506,7 +509,9 @@ if (isset($_SESSION['login_sucesso'])) {
                 btn.addEventListener('click', function() {
                     // Verifica se o usuário está logado antes de fazer qualquer coisa
                     if (!isUserLoggedIn) {
-                        const toast = new bootstrap.Toast(document.getElementById('loginToast'));
+                        const loginToast = document.getElementById('loginToast');
+                        loginToast.style.display = 'block'; // Torna o toast visível
+                        const toast = new bootstrap.Toast(loginToast);
                         toast.show(); // Exibe o toast de aviso
                         return; // Não faz nada mais se não estiver logado
                     }
@@ -530,7 +535,6 @@ if (isset($_SESSION['login_sucesso'])) {
                 });
             });
         </script>
-
 
 
         <hr>
