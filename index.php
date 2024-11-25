@@ -561,8 +561,8 @@ if (isset($_SESSION['login_sucesso'])) {
                 <footer>
                     <div class="container" id="containerFooter">
                         <ul>
-                            <h3>Drogasss</h3>
-                            <p>Sobre nos: Somos os maiores traficantes da america latina, vendendo muitas drogas pelo nosso site</p>
+                            <h3>ECOFARMA</h3>
+                            <p>Comprometidos com a saúde e bem-estar de nossos clientes, oferecemos medicamentos, produtos de higiene e beleza com atendimento de qualidade e preços acessíveis. Nossa missão é proporcionar cuidados essenciais para você e sua família</p>
                             <div class="redes-sociais">
                                 <a href="https://www.instagram.com" target="_blank"><img class="cfProd" src="imgs/instagram.svg" alt="Instagram"></a>
                                 <a href="https://www.youtube.com" target="_blank"><img class="cfProd" src="imgs/youtube.svg" alt="YouTube"></a>
@@ -593,7 +593,7 @@ if (isset($_SESSION['login_sucesso'])) {
                                 <p>+55 11 88888888</p>
                             </li>
                             <li>
-                                <p>emaildrogaria@gmail.com</p>
+                                <p>emailEcoFarma@gmail.com</p>
                             </li>
                             <li>
                                 <p>Brasil</p>
