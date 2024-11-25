@@ -109,55 +109,40 @@
                         <h4 class="text-start mb-4">Carrinho - Finalização da compra</h4>
                         <div class="row">
                             <!-- Card do produto no carrinho -->
-                            <div class="col-8">
-                                <div class="card mb-3 rounded shadow-sm" style="max-width: 50rem; padding: 0.5rem;">
-                                    <div class="row g-0">
-                                        <div class="col-md-3 d-flex align-items-center justify-content-center">
-                                            <img class="imgProdCart" src="imgs/teste.png" class="img-fluid" alt="medicamento">
-                                        </div>
-                                        <div class="col-md-9">
-                                            <div class="card-body">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="card-text mb-0">Medicamento genérico - 99mg <br> 9 comprimidos</p> <br>
-                                                    <p class="card-text mb-0" style="color: gray;">Laboratório X</p>
-                                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                                        <button type="button" class="btn btn-light btn-outline-dark" onclick="decreaseQuantity()">&lt;</button>
-                                                        <span id="productQuantity" class="px-3" style="display: flex; align-items: center; color: black; background-color: #ffffff; border: 1px solid #ddd;">
-                                                            1
-                                                        </span>
-                                                        <button type="button" class="btn btn-light btn-outline-dark" onclick="increaseQuantity()">&gt;</button>
-                                                    </div>
-                                                    <p id="productPrice" class="card-text mb-0" style="font-weight: bold; font-family: 'Roboto';">R$10,00</p>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                            <div class="row">
+                                <!-- Carrinho de compras (esquerda) -->
+                                <div class="col-sm-8" id="cart-itens">
+                                    <!-- Aqui ficam os itens do carrinho, que podem ser removidos -->
+                                </div>
+
+                                <!-- Resumo e Frete (direita) -->
+                                <div class="col-sm-4" id="order-summary">
+                                    <div class="card mb-3 rounded shadow-sm">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-light">
+                                                <h4>RESUMO DO PEDIDO</h4>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between">Subtotal: <span id="subtotal" style="font-family: 'Roboto';">R$10,00</span></li>
+                                            <li class="list-group-item d-flex justify-content-between">Entrega: <span style="font-family: 'Roboto';">R$5,00</span></li>
+                                            <li class="list-group-item d-flex justify-content-between">Total: <span id="total" style="font-weight: bold; font-family: 'Roboto';">R$15,00</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="card mb-3 rounded shadow-sm">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-light">
+                                                <h4>CALCULAR FRETE</h4>
+                                            </li>
+                                            <li class="list-group-item"><input type="text" class="form-control" placeholder="Digite seu CEP" style="margin-top: 0.5rem; margin-bottom: 0.5rem;"></li>
+                                            <li class="list-group-item bg-light">
+                                                <h4>CUPOM DE DESCONTO</h4>
+                                            </li>
+                                            <li class="list-group-item"><input type="text" class="form-control" placeholder="Digite seu cupom" style="margin-top: 0.5rem; margin-bottom: 0.5rem;"></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="card mb-3 rounded shadow-sm">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item bg-light">
-                                            <h4>RESUMO DO PEDIDO</h4>
-                                        </li>
-                                        <li class="list-group-item d-flex justify-content-between">Subtotal: <span id="subtotal" style="font-family: 'Roboto';">R$10,00</span></li>
-                                        <li class="list-group-item d-flex justify-content-between">Entrega: <span style="font-family: 'Roboto';">R$5,00</span></li>
-                                        <li class="list-group-item d-flex justify-content-between">Total: <span id="total" style="font-weight: bold; font-family: 'Roboto';">R$15,00</span></li>
-                                    </ul>
-                                </div>
-                                <div class="card mb-3 rounded shadow-sm">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item bg-light">
-                                            <h4>CALCULAR FRETE</h4>
-                                        </li>
-                                        <li class="list-group-item"><input type="text" class="form-control" placeholder="Digite seu CEP" style="margin-top: 0.5rem; margin-bottom: 0.5rem;"></li>
-                                        <li class="list-group-item bg-light">
-                                            <h4>CUPOM DE DESCONTO</h4>
-                                        </li>
-                                        <li class="list-group-item"><input type="text" class="form-control" placeholder="Digite seu cupom" style="margin-top: 0.5rem; margin-bottom: 0.5rem;"></li>
-                                    </ul>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -256,6 +241,92 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        // Função para adicionar produtos ao carrinho
+        function addProductToCart(productName, productPrice) {
+            // Encontre o container do carrinho onde os produtos serão listados
+            const cartItemsContainer = document.getElementById("cart-itens");
+
+            // Crie um novo card para o produto
+            const productCard = document.createElement("div");
+            productCard.classList.add("col-12", "mb-3");
+
+            productCard.innerHTML = `
+            <div class="card mb-3 rounded shadow-sm" style="max-width: 50rem; padding: 0.5rem;">
+                <div class="row g-0">
+                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                        <img class="imgProdCart" src="imgs/teste.png" class="img-fluid" alt="Produto">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="card-text mb-0">${productName}</p> <br>
+                                <p class="card-text mb-0" style="color: gray;">Laboratório XYZ</p>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-light btn-outline-dark" onclick="decreaseQuantity(event)">&lt;</button>
+                                    <span class="productQuantity px-3" style="display: flex; align-items: center; color: black; background-color: #ffffff; border: 1px solid #ddd;">
+                                        1
+                                    </span>
+                                    <button type="button" class="btn btn-light btn-outline-dark" onclick="increaseQuantity(event)">&gt;</button>
+                                </div>
+                                <p class="productPrice card-text mb-0" style="font-weight: bold; font-family: 'Roboto';">R$${productPrice}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+            cartItemsContainer.appendChild(productCard);
+            updatePrices(); // Atualize os preços ao adicionar o produto
+        }
+    </script>
+
+    <script>
+        // Função para aumentar a quantidade do produto
+        function increaseQuantity(event) {
+            const quantityElem = event.target.previousElementSibling;
+            let quantity = parseInt(quantityElem.innerText);
+            quantityElem.innerText = quantity + 1;
+            updatePrices(); // Atualize o preço total sempre que a quantidade mudar
+        }
+
+        // Função para diminuir a quantidade do produto
+        function decreaseQuantity(event) {
+            const quantityElem = event.target.nextElementSibling;
+            let quantity = parseInt(quantityElem.innerText);
+            if (quantity > 1) {
+                quantityElem.innerText = quantity - 1;
+                updatePrices(); // Atualize o preço total sempre que a quantidade mudar
+            }
+        }
+    </script>
+
+    <script>
+        // Função para atualizar o preço total e subtotal
+        function updatePrices() {
+            let subtotal = 0;
+            const productPrices = document.querySelectorAll(".productPrice");
+            const productQuantities = document.querySelectorAll(".productQuantity");
+
+            // Somar os preços de todos os produtos no carrinho
+            for (let i = 0; i < productPrices.length; i++) {
+                const price = parseFloat(productPrices[i].innerText.replace('R$', ''));
+                const quantity = parseInt(productQuantities[i].innerText);
+                subtotal += price * quantity;
+            }
+
+            // Adicionar taxa de entrega
+            let deliveryFee = 5.00;
+            let total = subtotal + deliveryFee;
+
+            // Atualizar as labels de subtotal e total
+            document.getElementById("subtotal").innerText = "R$" + subtotal.toFixed(2);
+            document.getElementById("total").innerText = "R$" + total.toFixed(2);
+        }
+    </script>
 
 </body>
 

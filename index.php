@@ -212,7 +212,9 @@ if (isset($_SESSION['login_sucesso'])) {
 
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
 
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -483,10 +485,7 @@ if (isset($_SESSION['login_sucesso'])) {
 
         <!-- Toast para quando o produto for removido do carrinho -->
         <div class="toast" id="removeToast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <strong class="me-auto">Removido</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
+
             <div class="toast-body">
                 Produto removido do carrinho.
             </div>

@@ -333,3 +333,15 @@ footer .container a {
         transform: scale(1);
     }
 }
+
+#cart-itens {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os produtos ocupem várias linhas, se necessário */
+    gap: 1rem; /* Espaçamento entre os produtos */
+}
+
+#order-summary {
+    position: sticky; /* Faz com que o resumo e o cupom "grudem" ao rolar a página */
+    top: 0; /* Fica fixado no topo da área visível */
+    max-width: 25rem; /* Limita a largura do resumo */
+}
