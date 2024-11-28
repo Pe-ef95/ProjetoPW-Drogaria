@@ -70,7 +70,7 @@ if (isset($_SESSION['login_sucesso'])) {
             var toastElement = document.querySelector('.toast');
             if (toastElement) {
                 var toast = new bootstrap.Toast(toastElement, {
-                    delay: 3000 // Configura o tempo para desaparecer (3 segundos)
+                    delay: 1500 // Configura o tempo para desaparecer (3 segundos)
                 });
                 toast.show();
             }
@@ -192,26 +192,17 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
             </div>
             <div class="row text-center">
-
-                <!-- Dentro dos cards falta adicionar um input com atributo "readOnly" para apresentar o preço do produto -- Já adicionei-->
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Produto 1</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Dipirona Sodica</h5>
+                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
-
-                            <!-- Nos botões de curtidos dos cards quero que, ao usuário clicar faça uma animação que o coração fique preto
-                                para demonstrar que o produto agora está nos favoritos. (posso fazer isso depois sem problemas mas se quiser
-                                fazer tamo junto. Tem um ícone desse coração que ja esta na versão preto no site do bootstrap)  - Já adicionei -->
-
-
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-
                             <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
                                 <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
                             </button>
@@ -220,12 +211,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/Azelan.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Produto 2</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Azelan</h5>
+                            <p class="card-text">Azelan 150mg/g Gel 30g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$62,00</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -235,12 +226,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/LaRoche.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Produto 3</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">La Roche</h5>
+                            <p class="card-text">Creme Multirreparador Calmante Cicaplast Baume B5+ La Roche-Posay 40ml</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$58,90</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -250,12 +241,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/KitSolar.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Nivea Sun</h5>
+                            <p class="card-text">Kit Protetor Solar Corporal Nivea Sun Protect & Hidrata com 1 Protetor Infantil Kids FPS 60 100ml + 1 Protetor Adulto FPS 50 200ml</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$45,90</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -265,12 +256,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/ShampooCaspa.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Clear Men</h5>
+                            <p class="card-text">Shampoo Anticaspa Clear Men Hidratação Campeã Vini Júnior 200ml</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$27,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -294,12 +285,12 @@ if (isset($_SESSION['login_sucesso'])) {
             <div class="row text-center">
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/Fralda.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Pampers Pants</h5>
+                            <p class="card-text">Fralda Calça Pampers Pants Ajuste Total G 94 unidades</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$171,90</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -309,12 +300,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/Simfort.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Vitafor</h5>
+                            <p class="card-text">Probiótico Vitafor Simfort em Pó 30 sachês</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$109,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -324,12 +315,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/gummmy.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Gummy Hair</h5>
+                            <p class="card-text">Suplemento Alimentar Gummmy Imune Kids 30 pastilhas</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$41,00</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -339,12 +330,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/Colírio.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Hyabak</h5>
+                            <p class="card-text">Colírio Hyabak 0,15% 10ml</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$58,30</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -354,12 +345,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/ÓleoLoreal.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Elseve</h5>
+                            <p class="card-text">Óleo Extraordinário Tratamento Reconstrutor L'Oréal Paris Elseve 100ml</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$33,65</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
