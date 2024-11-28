@@ -374,12 +374,12 @@ if (isset($_SESSION['login_sucesso'])) {
             <div class="row text-center">
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/Absorvente.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Tena</h5>
+                            <p class="card-text">Absorvente para Incontinência Urinária Tena Lady Discreet Noturno Feminino Absorção Intensa 6 unidades</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$22,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -389,12 +389,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/ProtetorColchao.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Adultcare</h5>
+                            <p class="card-text">. Protetor para Colchão Descartável Unissex Adultcare M 6 unidades</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$37,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -404,12 +404,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/ProtetorSolarNivea.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Nivea Sun</h5>
+                            <p class="card-text">Protetor Solar Corporal Hidratação FPS 50 Nivea Sun 200ml</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$45,90</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -419,12 +419,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/FraldaConfortoSec.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Pampers Confort Sec</h5>
+                            <p class="card-text">Fralda Pampers Confort Sec XG 62 unidades</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$129,90</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -434,12 +434,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/teste.png" class="card-img-top" alt="teste">
+                        <img src="imgs/ProtetorSolarDarrow.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Exemplo de Card</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum, inventore unde expedita animi ea adipisci facere nobis, architecto</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Protetor Solar Facial FPS 60 Actine 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$10,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$50,78s</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
