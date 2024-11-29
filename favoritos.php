@@ -99,6 +99,51 @@
         <!-- Linha azul da divisória -->
         <hr>
 
+        <div id="cart-itens" class="col-8">
+            <!-- Aqui os produtos serão adicionados dinamicamente -->
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="container my-1">
+                    <div class="card mb-3 rounded shadow-sm" style="padding: 1.5rem;">
+                        <div class="row">
+                            <!-- Card do produto no carrinho -->
+                            <div class="row">
+                                    <!-- Lista de Produtos Favoritados -->
+                                <div class="col-sm-12">
+                                    <div class="card mb-3 rounded shadow-sm">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-light">
+                                                <h4>Favoritos</h4>
+                                            </li>
+                                            <!-- Produto Favorito 1 -->
+                                            <li class="list-group-item">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <img src="imgs/actineGelLimpeza.webp" alt="Produto Favorito 1" 
+                                                        style="width: 6.25rem; border-radius: 5px; margin-right: 10px;">
+                                                    <span style="flex-grow: 1;">Produto Favorito 1</span>
+                                                    <button class="btn btn-outline-primary btn-sm">Adicionar ao Carrinho</button>
+                                                </div>
+                                            </li>
+                                            <!-- Produto Favorito 2 -->
+                                            <li class="list-group-item">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <img src="imgs/Dipirona.webp" alt="Produto Favorito 2" 
+                                                        style="width: 6.25rem; border-radius: 5px; margin-right: 10px;">
+                                                    <span style="flex-grow: 1;">Produto Favorito 2</span>
+                                                    <button class="btn btn-outline-primary btn-sm">Adicionar ao Carrinho</button>
+                                                </div>
+                                            </li>
+                                            <!-- Adicione mais itens conforme necessário -->
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
 
         <hr>
 
