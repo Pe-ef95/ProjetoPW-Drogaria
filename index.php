@@ -101,7 +101,7 @@ if (isset($_SESSION['login_sucesso'])) {
                                         CATEGORIAS
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <li><a class="dropdown-item" href="categorias/categoria1.php">CATEGORIA 1</a></li>
+                                        <li><a class="dropdown-item" href=" categoria1.php">Remédios</a></li>
                                         <li><a class="dropdown-item" href="#">CATEGORIA 2</a></li>
                                         <li><a class="dropdown-item" href="#">CATEGORIA 3</a></li>
                                         <li><a class="dropdown-item" href="#">CATEGORIA 4</a></li>
@@ -121,14 +121,14 @@ if (isset($_SESSION['login_sucesso'])) {
                                 <!-- Botões do usuário - Dentro da tag 'a' trocar a # pelo caminho das respectivas páginas -->
                                 <div class="d-flex ms-auto">
                                     <div class="d-flex align-items-center me-2">
-                                        <a href="#">
+                                        <a href="usuario.php">
                                             <button class="btn btn-success" type="button">
                                                 <img class="BtnUCF" src="imgs/user.svg" alt="Usuario">
                                             </button>
                                         </a>
                                     </div>
                                     <div class="d-flex align-items-center me-2">
-                                        <a href="#">
+                                        <a href="favoritos.php">
                                             <button class="btn btn-success" type="button">
                                                 <img class="BtnUCF" src="imgs/curtidos.svg" alt="favoritos">
                                             </button>
@@ -546,9 +546,6 @@ if (isset($_SESSION['login_sucesso'])) {
 
         <hr>
 
-
-        <!-- Aqui tem o rodapé, a única coisa que falta nele é adicionar o ícone do twitter na seção de redes sociais e trocar o texto
-            sobre tráfico -->
 
         <div class="row">
             <div class="col">
