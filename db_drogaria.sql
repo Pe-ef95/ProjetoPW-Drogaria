@@ -126,6 +126,15 @@ CREATE TABLE `FormaPgto` (
   FOREIGN KEY (`ID_metodoPgto`) REFERENCES `MetodoPgto`(`ID_metodoPgto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE favoritos (
+  ID_Cliente INT,                     -- Referência ao cliente que marcou o produto como favorito
+  ID_Produto INT,                     -- Referência ao produto que foi marcado como favorito
+  Data_adicionado DATE DEFAULT NOW(), -- Data em que o produto foi marcado como favorito
+  PRIMARY KEY (ID_Cliente, ID_Produto), -- Garante que um cliente não marque o mesmo produto mais de uma vez
+  FOREIGN KEY (ID_Cliente) REFERENCES Cliente(ID_Cliente) ON DELETE CASCADE, -- Associação com Cliente
+  FOREIGN KEY (ID_Produto) REFERENCES Produto(ID_Produto) ON DELETE CASCADE  -- Associação com Produto
+);
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
