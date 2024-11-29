@@ -48,8 +48,8 @@
                                         CATEGORIAS
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <li><a class="dropdown-item" href=" categoria1.php">Remédios</a></li>
-                                        <li><a class="dropdown-item" href="#">Cosméticos</a></li>
+                                        <li><a class="dropdown-item" href="categoria_remédios.php">Remédios</a></li>
+                                        <li><a class="dropdown-item" href="categoria_cosméticos.php">Cosméticos</a></li>
                                         <li><a class="dropdown-item" href="#">Beleza</a></li>
                                         <li><a class="dropdown-item" href="#">Vitaminas</a></li>
                                         <li><a class="dropdown-item" href="#">Suplementos</a></li>

@@ -101,7 +101,7 @@ if (isset($_SESSION['login_sucesso'])) {
                                         CATEGORIAS
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <li><a class="dropdown-item" href="categoria_remédios.php">Remédios</a></li>
+                                        <li><a class="dropdown-item" href=" categoria_remédios.php">Remédios</a></li>
                                         <li><a class="dropdown-item" href="categoria_cosméticos.php">Cosméticos</a></li>
                                         <li><a class="dropdown-item" href="#">Beleza</a></li>
                                         <li><a class="dropdown-item" href="#">Vitaminas</a></li>
@@ -194,12 +194,12 @@ if (isset($_SESSION['login_sucesso'])) {
             <div class="row text-center">
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -211,61 +211,69 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Azelan.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Azelan</h5>
-                            <p class="card-text">Azelan 150mg/g Gel 30g</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$62,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/LaRoche.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">La Roche</h5>
-                            <p class="card-text">Creme Multirreparador Calmante Cicaplast Baume B5+ La Roche-Posay 40ml</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$58,90</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/KitSolar.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Nivea Sun</h5>
-                            <p class="card-text">Kit Protetor Solar Corporal Nivea Sun Protect & Hidrata com 1 Protetor Infantil Kids FPS 60 100ml + 1 Protetor Adulto FPS 50 200ml</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$45,90</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/ShampooCaspa.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Clear Men</h5>
-                            <p class="card-text">Shampoo Anticaspa Clear Men Hidratação Campeã Vini Júnior 200ml</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$27,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -285,76 +293,86 @@ if (isset($_SESSION['login_sucesso'])) {
             <div class="row text-center">
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Fralda.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Pampers Pants</h5>
-                            <p class="card-text">Fralda Calça Pampers Pants Ajuste Total G 94 unidades</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$171,90</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Simfort.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Vitafor</h5>
-                            <p class="card-text">Probiótico Vitafor Simfort em Pó 30 sachês</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$109,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/gummmy.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Gummy Hair</h5>
-                            <p class="card-text">Suplemento Alimentar Gummmy Imune Kids 30 pastilhas</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$41,00</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Colírio.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Hyabak</h5>
-                            <p class="card-text">Colírio Hyabak 0,15% 10ml</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$58,30</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/ÓleoLoreal.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Elseve</h5>
-                            <p class="card-text">Óleo Extraordinário Tratamento Reconstrutor L'Oréal Paris Elseve 100ml</p>
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$33,65</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -374,76 +392,86 @@ if (isset($_SESSION['login_sucesso'])) {
             <div class="row text-center">
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Absorvente.webp" class="card-img-top" alt="teste">
-                        <div class="card-body">
-                            <h5 class="card-title">Tena</h5>
-                            <p class="card-text">Absorvente para Incontinência Urinária Tena Lady Discreet Noturno Feminino Absorção Intensa 6 unidades</p>
-                            <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$22,99</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between">
-                            <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col me-1">
-                    <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/ProtetorColchao.webp" class="card-img-top" alt="teste">
-                        <div class="card-body">
-                            <h5 class="card-title">Adultcare</h5>
-                            <p class="card-text">. Protetor para Colchão Descartável Unissex Adultcare M 6 unidades</p>
-                            <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$37,99</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between">
-                            <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col me-1">
-                    <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/ProtetorSolarNivea.webp" class="card-img-top" alt="teste">
-                        <div class="card-body">
-                            <h5 class="card-title">Nivea Sun</h5>
-                            <p class="card-text">Protetor Solar Corporal Hidratação FPS 50 Nivea Sun 200ml</p>
-                            <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$45,90</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between">
-                            <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col me-1">
-                    <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/FraldaConfortoSec.webp" class="card-img-top" alt="teste">
-                        <div class="card-body">
-                            <h5 class="card-title">Pampers Confort Sec</h5>
-                            <p class="card-text">Fralda Pampers Confort Sec XG 62 unidades</p>
-                            <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$129,90</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between">
-                            <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col me-1">
-                    <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/ProtetorSolarDarrow.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
                             <h5 class="card-title">Darrow</h5>
-                            <p class="card-text">Protetor Solar Facial FPS 60 Actine 40g</p>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$50,78s</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
-                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()"><img class="cfProd carrinhoIcon" src="imgs/carrinho.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col me-1">
+                    <div class="card h-100" style="width: 14rem;">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
+                        <div class="card-body">
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
+                            <hr>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col me-1">
+                    <div class="card h-100" style="width: 14rem;">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
+                        <div class="card-body">
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
+                            <hr>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col me-1">
+                    <div class="card h-100" style="width: 14rem;">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
+                        <div class="card-body">
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
+                            <hr>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col me-1">
+                    <div class="card h-100" style="width: 14rem;">
+                        <img src="imgs/ActineGelLimpeza.webp" class="card-img-top" alt="teste">
+                        <div class="card-body">
+                            <h5 class="card-title">Darrow</h5>
+                            <p class="card-text">Kit Actine Darrow Gel de Limpeza 140g + Gel de Limpeza 40g</p>
+                            <hr>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$39,99</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
+                            <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
+                                <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
+                            </button>
                         </div>
                     </div>
                 </div>
