@@ -1,7 +1,7 @@
 <?php
 
 // O require_once serve para conectarmos os arquivos do projeto entre eles, está sendo conectada com conexao.php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/projetopw/controller/conexao.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/ProjetoPW-Drogaria/controller/conexao.php';
 
 // cria a classe Pessoa para estruturar as funções
 class cliente
@@ -172,7 +172,7 @@ class cliente
     }
     public function excluir($ID_Cliente)
     {
-        $sql = "DELETE FROM pessoa WHERE ID_Cliente = ?";
+        $sql = "DELETE FROM Cliente WHERE ID_Cliente = ?";
         $stmt = $this->conexao->getConexao()->prepare($sql);
         $stmt->bind_param('i', $ID_Cliente);
         return $stmt->execute();

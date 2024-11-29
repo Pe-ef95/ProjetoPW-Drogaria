@@ -164,7 +164,7 @@
                                 <div class="d-flex justify-content-end gap-2 mt-3">
 
                                     <!-- Botão para editar informações -->
-                                    <a href="#">
+                                    <a href="Editar.php">
                                         <button type="button" class="btn btn-success">Editar</button>
                                     </a>
 
@@ -179,7 +179,7 @@
                                     </a>
 
                                     <!-- Botão para excluir a conta -->
-                                    <a href="#">
+                                    <a href="Excluir.php">
                                         <button type="button" class="btn btn-danger">Excluir</button>
                                     </a>
                                 </div>

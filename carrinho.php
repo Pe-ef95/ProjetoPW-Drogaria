@@ -67,14 +67,14 @@
                                 <!-- Botões do usuário - Dentro da tag 'a' trocar a # pelo caminho das respectivas páginas -->
                                 <div class="d-flex ms-auto">
                                     <div class="d-flex align-items-center me-2">
-                                        <a href="#">
+                                        <a href="usuario.php">
                                             <button class="btn btn-success" type="button">
                                                 <img class="BtnUCF" src="imgs/user.svg" alt="Usuario">
                                             </button>
                                         </a>
                                     </div>
                                     <div class="d-flex align-items-center me-2">
-                                        <a href="#">
+                                        <a href="favoritos.php">
                                             <button class="btn btn-success" type="button">
                                                 <img class="BtnUCF" src="imgs/curtidos.svg" alt="favoritos">
                                             </button>
@@ -204,6 +204,8 @@
                                 <a href="https://www.instagram.com" target="_blank"><img class="cfProd" src="imgs/instagram.svg" alt="Instagram"></a>
                                 <a href="https://www.youtube.com" target="_blank"><img class="cfProd" src="imgs/youtube.svg" alt="YouTube"></a>
                                 <a href="https://www.linkedin.com" target="_blank"><img class="cfProd" src="imgs/linkedin.svg" alt="LinkedIn"></a>
+                                <a href="https://www.x.com" target="_blank"><img class="cfProd" src="imgs/twitter-x.svg" alt="Twitter"></a>
+
                             </div>
                         </ul>
 
@@ -230,7 +232,7 @@
                                 <p>+55 11 88888888</p>
                             </li>
                             <li>
-                                <p>emaildrogaria@gmail.com</p>
+                                <p>emailEcoFarma@gmail.com</p>
                             </li>
                             <li>
                                 <p>Brasil</p>
