@@ -49,13 +49,13 @@
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <li><a class="dropdown-item" href=" categoria1.php">Remédios</a></li>
-                                        <li><a class="dropdown-item" href="#">CATEGORIA 2</a></li>
-                                        <li><a class="dropdown-item" href="#">CATEGORIA 3</a></li>
-                                        <li><a class="dropdown-item" href="#">CATEGORIA 4</a></li>
-                                        <li><a class="dropdown-item" href="#">CATEGORIA 5</a></li>
-                                        <li><a class="dropdown-item" href="#">CATEGORIA 6</a></li>
-                                        <li><a class="dropdown-item" href="#">CATEGORIA 7</a></li>
-                                        <li><a class="dropdown-item" href="#">CATEGORIA 8</a></li>
+                                        <li><a class="dropdown-item" href="#">Cosméticos</a></li>
+                                        <li><a class="dropdown-item" href="#">Beleza</a></li>
+                                        <li><a class="dropdown-item" href="#">Vitaminas</a></li>
+                                        <li><a class="dropdown-item" href="#">Suplementos</a></li>
+                                        <li><a class="dropdown-item" href="#">Higiene</a></li>
+                                        <li><a class="dropdown-item" href="#">Utilitários</a></li>
+                                        <li><a class="dropdown-item" href="#">Alimentos</a></li>
                                     </ul>
                                 </div>
 
