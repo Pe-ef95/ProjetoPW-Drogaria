@@ -127,7 +127,7 @@ h4 {
 }
 
 input::placeholder {
-    font-family: 'Koulen', sans-serif; /* Troque pela fonte desejada */
+    font-family: 'Roboto', sans-serif; /* Troque pela fonte desejada */
 }
 
 /* Referente aos botões Usuário, Carrinho e Favoritos, por isso BtnUCF */
@@ -212,6 +212,15 @@ a {
 /* Referente aos inputs de todo o site */
 input {
     font-family: 'Koulen';
+}
+
+label {
+    font-family: 'Roboto';
+}
+
+.nomeUser {
+    font-weight: 800;
+    font-size: 28px;
 }
 
 /* Referente à classe link-modificado que não me lembro aonde utlilizei, há grandes chaces de ser inútil */

@@ -111,10 +111,15 @@
                                 <img src="imgs/foto_usuario.png" class="img-thumbnail rounded-circle"
                                     alt="Foto do usuário" style="width: 180px; height: 180px;">
                             </div>
+                            
+                            <div class="row">
+                                <label class="nomeUser">Pedro Silva</label>
+                            </div>
 
                             <!-- Linha vertical separadora (visível apenas em telas grandes) -->
                             <div class="vr d-none d-lg-block"
-                                style="height: auto; width: 2px; background-color: #29c2d2;"></div>
+                                style="height: auto; width: 2px; background-color: #29c2d2;">
+                            </div>
 
                             <!-- Informações do usuário -->
                             <div class="flex-grow-1 ms-lg-4">
@@ -124,7 +129,7 @@
                                     <div class="mb-3">
                                         <label for="nomeUsuario" class="form-label"><strong>Nome
                                                 completo:</strong></label>
-                                        <input type="text" class="form-control" id="nomeUsuario" value="Pedro Silva"
+                                        <input type="text" class="form-control" id="nomeUsuario" placeholder="Nome de usuário" value=""
                                             disabled>
                                     </div>
 
@@ -133,13 +138,13 @@
                                         <label for="enderecoUsuario"
                                             class="form-label"><strong>Endereço:</strong></label>
                                         <input type="endereco" class="form-control" id="enderecoUsuario"
-                                            value="rua dos carvalhos 203" disabled>
+                                            value="" placeholder="rua dos carvalhos 203" disabled>
                                     </div>
 
                                     <!-- CPF -->
                                     <div class="mb-3">
                                         <label for="cpfUsuario" class="form-label"><strong>CPF:</strong></label>
-                                        <input type="cpf" class="form-control" id="cpfUsuario" value="###.456.789-##"
+                                        <input type="cpf" class="form-control" id="cpfUsuario" value="" placeholder="###.456.789-##"
                                             disabled>
                                     </div>
 
@@ -148,14 +153,14 @@
                                         <label for="dataUsuario" class="form-label"><strong>Data de
                                                 Nascimento:</strong></label>
                                         <input type="dataUsuario" class="form-control" id="dataUsuario"
-                                            value="23/01/1980" disabled>
+                                            value="" placeholder="23/01/1980" disabled>
                                     </div>
 
                                     <!-- Email -->
                                     <div class="mb-3">
                                         <label for="emailUsuario" class="form-label"><strong>Email:</strong></label>
                                         <input type="emailUsuario" class="form-control" id="emailUsuario"
-                                            value="PedroSilva@gmail.com" disabled>
+                                            value="" placeholder="pedroSilva@gmail.com" disabled>
                                     </div>
 
                                 </form>
