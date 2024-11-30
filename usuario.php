@@ -111,9 +111,9 @@
                                 <img src="imgs/foto_usuario.png" class="img-thumbnail rounded-circle"
                                     alt="Foto do usuário" style="width: 180px; height: 180px;">
                             </div>
-                            
+
                             <div class="row">
-                                <label class="nomeUser">Pedro Silva</label>
+                                <label class="nomeUser"></label>
                             </div>
 
                             <!-- Linha vertical separadora (visível apenas em telas grandes) -->
@@ -179,7 +179,7 @@
                                     </a>
 
                                     <!-- Botão para excluir a conta -->
-                                    <a href="Excluir.php">
+                                    <a href="#">
                                         <button type="button" class="btn btn-danger">Excluir</button>
                                     </a>
                                 </div>

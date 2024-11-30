@@ -211,12 +211,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/alegra.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Allegra</h5>
+                            <p class="card-text">Antialérgico Allegra Pediátrico Cloridrato de Fexofenadina 6mg/ml Suspensão Oral 60ml com Seringa</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$38,81</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -228,12 +228,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/azitromicina.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Prati Donaduzzi</h5>
+                            <p class="card-text">Azitromicina Di-Hidratada 500mg 5 comprimidos Farmaco Prati Genérico</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R15,19</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -245,12 +245,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/evra.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Evra</h5>
+                            <p class="card-text">Evra 6mg + 0,6mg 3 Adesivos Transdérmicos</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$104,50</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -262,12 +262,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/nimesulida.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Eurofarma</h5>
+                            <p class="card-text">Nimesulida 100mg 12 comprimidos Eurofarma Genérico</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$5,49</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -293,12 +293,12 @@ if (isset($_SESSION['login_sucesso'])) {
             <div class="row text-center">
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/nicorette.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Nicorette</h5>
+                            <p class="card-text">Nicorette Icemint 2mg Goma Mastigável para Parar de Fumar 30 unidades</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$89,69</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -310,12 +310,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/rinosoro.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Rinosoro</h5>
+                            <p class="card-text">Rinosoro Jet 0,9% Descongestionante Spray Jato Contínuo 100ml</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$44,59</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -327,12 +327,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/paracetamol.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Medley</h5>
+                            <p class="card-text">Cloridrato de Venlafaxina 150mg 30 cápsulas Medley Genérico</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$48,48</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -344,12 +344,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/ozempic.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Ozempic</h5>
+                            <p class="card-text">Ozempic 1mg Solução Injetável 3ml + 4 agulhas - Geladeira</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$1063,05</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -361,12 +361,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/aerolin.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Aerolin</h5>
+                            <p class="card-text">Aerolin Sulfato de Salbutamol 100mcg Spray 200 Doses</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$17,72</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -392,12 +392,12 @@ if (isset($_SESSION['login_sucesso'])) {
             <div class="row text-center">
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/dexaneurin.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Dexaneurin</h5>
+                            <p class="card-text">Dexaneurin Cianocobalamina 0,53mg + Piridoxina 100mg + Tiamina 100mg 3 ampolas</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$43,59</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -426,12 +426,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/trezete.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Trezete</h5>
+                            <p class="card-text">Trezete Rosuvastatina Cálcica 10mg + Ezetimiba 10mg 60 Comprimidos</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$140,00</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -443,12 +443,12 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/cimegripe.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Cimegripe</h5>
+                            <p class="card-text">Cimegripe Cloridrato Fenillefrina 4mg + Paracetamol 400mg + Maleato de Clorfeniramina 4mg 20 cápsulas</p>
                             <hr>
-                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
+                            <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$12,90</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
@@ -460,10 +460,10 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
-                        <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">
+                        <img src="imgs/doralgina.webp" class="card-img-top" alt="teste">
                         <div class="card-body">
-                            <h5 class="card-title">Dipirona Sodica</h5>
-                            <p class="card-text">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</p>
+                            <h5 class="card-title">Doralgina</h5>
+                            <p class="card-text">Doralgina Dipirona Sódica 300mg + Isometepteno 30mg + Cafeína 30mg 20 comprimidos</p>
                             <hr>
                             <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
                         </div>
