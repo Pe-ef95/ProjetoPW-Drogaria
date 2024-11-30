@@ -192,6 +192,7 @@ if (isset($_SESSION['login_sucesso'])) {
                 </div>
             </div>
             <div class="row text-center">
+                
                 <div class="col me-1">
                     <div class="card h-100" style="width: 14rem;">
                         <img src="imgs/Dipirona.webp" class="card-img-top" alt="teste">

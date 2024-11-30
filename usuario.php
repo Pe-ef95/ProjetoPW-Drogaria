@@ -163,11 +163,6 @@
                                 <!-- Contêiner para os botões -->
                                 <div class="d-flex justify-content-end gap-2 mt-3">
 
-                                    <!-- Botão para editar informações -->
-                                    <a href="Editar.php">
-                                        <button type="button" class="btn btn-success">Editar</button>
-                                    </a>
-
                                     <!-- Botão para logar-->
                                     <a href="login.php">
                                         <button type="button" href="login.php" class="btn btn-success">Login</button>

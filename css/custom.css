@@ -141,12 +141,12 @@ input::placeholder {
 
 /* Classe de botão */
 .btn-success {
-    --bs-btn-color: #fff;
+    --bs-btn-color: #000000;
     --bs-btn-bg: #29D2C2;
     --bs-btn-border-color: #29D2C2;
-    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-color: #000000;
     --bs-btn-hover-bg: #49ffed;
-    --bs-btn-hover-border-color: #29D2C2;
+    --bs-btn-hover-border-color: #49ffed;
     --bs-btn-focus-shadow-rgb: 60, 153, 110;
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: #29D2C2;

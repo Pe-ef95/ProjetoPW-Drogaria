@@ -135,6 +135,16 @@ CREATE TABLE favoritos (
   FOREIGN KEY (ID_Produto) REFERENCES Produto(ID_Produto) ON DELETE CASCADE  -- Associação com Produto
 );
 
+CREATE TABLE Carrinho (
+  ID_Carrinho INT AUTO_INCREMENT PRIMARY KEY,  -- Identificador único para o carrinho
+  ID_Cliente INT NOT NULL,                     -- Referência ao cliente que criou o carrinho
+  ID_Produto INT NOT NULL,                     -- Produto adicionado ao carrinho
+  Quantidade INT NOT NULL DEFAULT 1,           -- Quantidade do produto no carrinho
+  FOREIGN KEY (ID_Cliente) REFERENCES Cliente(ID_Cliente) ON DELETE CASCADE,
+  FOREIGN KEY (ID_Produto) REFERENCES Produto(ID_Produto) ON DELETE CASCADE
+);
+
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
