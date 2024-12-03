@@ -106,7 +106,7 @@
             <div class="col">
                 <div class="container my-1">
                     <div class="card mb-3 rounded shadow-sm" style="padding: 1.5rem;">
-                        <h4 class="text-start mb-4">Carrinho - Finalização da compra</h4>
+                        <h4 class="text-start mb-4">Carrinho - Finalizacao da compra</h4>
                         <div class="row">
                             <!-- Card do produto no carrinho -->
 
@@ -123,9 +123,9 @@
                                             <li class="list-group-item bg-light">
                                                 <h4>RESUMO DO PEDIDO</h4>
                                             </li>
-                                            <li class="list-group-item d-flex justify-content-between">Subtotal: <span id="subtotal" style="font-family: 'Roboto';">R$10,00</span></li>
-                                            <li class="list-group-item d-flex justify-content-between">Entrega: <span style="font-family: 'Roboto';">R$5,00</span></li>
-                                            <li class="list-group-item d-flex justify-content-between">Total: <span id="total" style="font-weight: bold; font-family: 'Roboto';">R$15,00</span></li>
+                                            <li class="list-group-item d-flex justify-content-between">Subtotal: <span id="subtotal" style="font-family: 'Roboto';">R$00,00</span></li>
+                                            <li class="list-group-item d-flex justify-content-between">Entrega: <span style="font-family: 'Roboto';">R$00,00</span></li>
+                                            <li class="list-group-item d-flex justify-content-between">Total: <span id="total" style="font-weight: bold; font-family: 'Roboto';">R$00,00</span></li>
                                         </ul>
                                     </div>
                                     <div class="card mb-3 rounded shadow-sm">

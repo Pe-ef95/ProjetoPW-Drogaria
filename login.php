@@ -124,64 +124,68 @@ if (isset($_GET['mensagem']) && $_GET['mensagem'] === 'conta_excluida') {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="form-container">
-                        <form method="POST" action="controller/loginController.php">
+                    <div class="container my-1">
+                        <div class="card mb-3 rounded shadow-sm" style="padding: 1.5rem; margin: 2rem;">
+                            <div class="form-container">
+                                <form method="POST" action="controller/loginController.php">
 
-                            <!-- Toast de erro, exibido se houver uma mensagem de erro na sessão -->
-                            <?php if (isset($_SESSION['erro'])): ?>
-                                <div class="toast toast-custom align-items-center text-white bg-danger show" role="alert">
-                                    <div class="d-flex">
-                                        <div class="toast-body">
-                                            <?= $_SESSION['erro']; ?>
+                                    <!-- Toast de erro, exibido se houver uma mensagem de erro na sessão -->
+                                    <?php if (isset($_SESSION['erro'])): ?>
+                                        <div class="toast toast-custom align-items-center text-white bg-danger show" role="alert">
+                                            <div class="d-flex">
+                                                <div class="toast-body">
+                                                    <?= $_SESSION['erro']; ?>
+                                                </div>
+                                                <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                                                    data-bs-dismiss="toast" aria-label="Close"></button>
+                                            </div>
                                         </div>
-                                        <button type="button" class="btn-close btn-close-white me-2 m-auto"
-                                            data-bs-dismiss="toast" aria-label="Close"></button>
+                                        <?php unset($_SESSION['erro']); // Remove a mensagem após exibi-la 
+                                        ?>
+                                    <?php endif; ?>
+
+
+                                    <!-- Campo de email -->
+                                    <div class="mb-3">
+                                        <label for="campoEmail" class="form-label">Endereço de email<span style="color: red;">*</span></label>
+                                        <input type="email" class="form-control" id="campoEmail" name="campoEmail" aria-describedby="descEmail">
+                                        <div id="descEmail" class="form-text">Seu Email</div>
                                     </div>
-                                </div>
-                                <?php unset($_SESSION['erro']); // Remove a mensagem após exibi-la 
-                                ?>
-                            <?php endif; ?>
 
+                                    <!-- Campo de senha -->
+                                    <div class="mb-3">
+                                        <label for="campoSenha" class="form-label">Senha<span style="color: red;">*</span></label>
+                                        <input type="password" class="form-control" id="campoSenha" name="campoSenha" maxlength="20"
+                                            minlength="8">
+                                        <br>
 
-                            <!-- Campo de email -->
-                            <div class="mb-3">
-                                <label for="campoEmail" class="form-label">Endereço de email<span style="color: red;">*</span></label>
-                                <input type="email" class="form-control" id="campoEmail" name="campoEmail" aria-describedby="descEmail">
-                                <div id="descEmail" class="form-text">Seu Email</div>
+                                        <br>
+
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="showPassword">
+                                            <label class="form-check-label" for="showPassword">Mostrar senha</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- CheckBox "Lembrar-me" -->
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Lembrar campos</label>
+                                    </div>
+
+                                    <!-- Botão de cadastro -->
+                                    <!-- Contêiner para centralizar o botão -->
+                                    <div style="text-align: center; margin-top: 20px;">
+                                        <button type="submit" class="btn btn-primary">Fazer Login</button>
+                                    </div>
+
+                                    <!-- Link para recuperação de senha -->
+                                    <div class="mt-3 text-center">
+                                        <a href="cadastro.php" class="link-recover" id="recoverPasswordLink">Ainda não possui uma conta? Cadastre-se</a>
+                                    </div>
+                                </form>
                             </div>
-
-                            <!-- Campo de senha -->
-                            <div class="mb-3">
-                                <label for="campoSenha" class="form-label">Senha<span style="color: red;">*</span></label>
-                                <input type="password" class="form-control" id="campoSenha" name="campoSenha" maxlength="20"
-                                    minlength="8">
-                                <br>
-
-                                <br>
-
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="showPassword">
-                                    <label class="form-check-label" for="showPassword">Mostrar senha</label>
-                                </div>
-                            </div>
-
-                            <!-- CheckBox "Lembrar-me" -->
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Lembrar campos</label>
-                            </div>
-
-                            <!-- Botão de cadastro -->
-                            <!-- Contêiner para centralizar o botão -->
-                            <div style="text-align: center; margin-top: 20px;">
-                                <button type="submit" class="btn btn-primary">Fazer Login</button>
-                            </div>
-
-                            <!-- Link para recuperação de senha -->
-                            <div class="mt-3 text-center">
-                                <a href="cadastro.php" class="link-recover" id="recoverPasswordLink">Ainda não possui uma conta? Cadastre-se</a>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
