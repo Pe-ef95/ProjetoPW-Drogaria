@@ -122,14 +122,25 @@
                                             <!-- Produto Favorito 1 -->
                                             <li class="list-group-item">
                                                 <div class="d-flex align-items-center justify-content-between">
-                                                    <img src="imgs/actineGelLimpeza.webp" alt="Produto Favorito 1" 
-                                                        style="width: 6.25rem; border-radius: 5px; margin-right: 10px;">
+                                                    <img src="imgs/Dipirona.webp" alt="Produto Favorito 1" 
+                                                        style="width: 9rem; border-radius: 5px; margin-right: 10px;">
                                                         <!-- Aqui vai ficar o nome do produto favoritado -->
-                                                    <span style="flex-grow: 1;">Produto favorito</span>
+                                                    <span style="flex-grow: 1;">Dipirona Monoidratada 500mg 10 comprimidos EMS Genérico</span>
+                                                    <span style="flex-grow: 1; font-weight: bold; font-family: 'Roboto'">R$4,99</span>
                                                     <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
                                                 </div>
                                             </li>
-
+                                            <!-- Produto Favorito 2 -->
+                                            <li class="list-group-item">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <img src="imgs/LaRoche.webp" alt="Produto Favorito 2" 
+                                                        style="width: 9rem; border-radius: 5px; margin-right: 10px;">
+                                                        <!-- Aqui vai ficar o nome do produto favoritado -->
+                                                    <span style="flex-grow: 1;">Creme Multirreparador Calmante Cicaplast Baume B5+ La Roche-Posay 40ml</span>
+                                                    <span style="flex-grow: 1; font-weight: bold; font-family: 'Roboto'">R$58,90</span>
+                                                    <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>

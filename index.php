@@ -500,49 +500,7 @@ if (isset($_SESSION['login_sucesso'])) {
                     toast.show();
                     return; // Não faz nada se não estiver logado
                 }
-
-                // Encontra o ícone do carrinho no botão
-                const carrinhoIcon = btn.querySelector('.carrinhoIcon');
-
-                // Verifica se o produto está no carrinho (se o botão contém a classe 'noCarrinho')
-                const isProductInCart = btn.classList.contains('noCarrinho');
-
-                if (isProductInCart) {
-                    // Produto já está no carrinho, então removemos
-                    btn.classList.remove('noCarrinho');
-
-                    // Exibe o toast de remoção (vermelho)
-                    const removeToast = document.getElementById('removeToast');
-                    const toast = new bootstrap.Toast(removeToast);
-                    toast.show();
-
-                    // Troca o ícone para refletir a remoção
-                    setTimeout(function() {
-                        carrinhoIcon.src = 'imgs/carrinho.svg'; // Substitua com o caminho correto
-                    }, 300); // Atraso para animação
-                } else {
-                    // Produto não está no carrinho, então adicionamos
-                    btn.classList.add('noCarrinho');
-
-                    // Exibe o toast de sucesso (verde)
-                    const successToast = document.getElementById('successToast');
-                    const toast = new bootstrap.Toast(successToast);
-                    toast.show();
-
-                    // Troca o ícone para refletir a adição
-                    setTimeout(function() {
-                        carrinhoIcon.src = 'imgs/carrinhoClicado.svg'; // Substitua com o caminho correto
-                    }, 300); // Atraso para animação
-                }
-            }
-
-            // Testar o comportamento do botão de carrinho
-            const carrinhoBtns = document.querySelectorAll('.carrinhoBtn');
-            carrinhoBtns.forEach(function(btn) {
-                btn.addEventListener('click', function() {
-                    toggleCarrinho(btn);
-                });
-            });
+            };
         </script>
 
 
