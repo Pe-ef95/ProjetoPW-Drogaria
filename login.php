@@ -1,5 +1,8 @@
 <?php
 session_start(); // Inicia a sessão para acessar a variável de erro
+if (isset($_GET['mensagem']) && $_GET['mensagem'] === 'conta_excluida') {
+    echo "<div class='alert alert-success'>Sua conta foi excluída com sucesso.</div>";
+}
 ?>
 
 <!DOCTYPE html>

@@ -115,42 +115,42 @@
                             <!-- Campo de nome -->
                             <div class="mb-3">
                                 <label for="campoNome" class="form-label">Nome<span style="color: red;"> *</span></label>
-                                <input type="text" class="form-control" id="campoNome" name="campoNome">
+                                <input type="text" name="nome" class="form-control" id="campoNome" name="campoNome">
                                 <div id="descNome" class="form-text">Seu nome completo</div>
                             </div>
 
                             <!-- Campo de endereco -->
                             <div class="mb-3">
                                 <label for="campoEndereco" class="form-label">Endereço<span style="color: red;"> *</span></label>
-                                <input type="text" class="form-control" id="campoEndereco" name="campoEndereco">
+                                <input type="text" name="endereco" class="form-control" id="campoEndereco" name="campoEndereco">
                                 <div id="descEndereco" class="form-text">Seu endereço</div>
                             </div>
 
                             <!-- Campo de cpf -->
                             <div class="mb-3">
                                 <label for="campoCPF" class="form-label">CPF<span style="color: red;"> *</span></label>
-                                <input type="text" class="form-control" id="campoCPF" name="campoCPF">
+                                <input type="text" name="cpf" class="form-control" id="campoCPF" name="campoCPF">
                                 <div id="descCPF" class="form-text">Número do seu CPF</div>
                             </div>
 
                             <!-- Campo de data de nascimento -->
                             <div class="mb-3">
                                 <label for="campoDataNascimento" class="form-label">Data de Nascimento<span style="color: red;"> *</span></label>
-                                <input type="date" class="form-control" id="campoDataNascimento" name="campoDataNascimento">
+                                <input type="date" name="data_nascimento" class="form-control" id="campoDataNascimento" name="campoDataNascimento">
                                 <div id="descDataNascimento" class="form-text">Sua data de nascimento (AAAA/MM/DD)</div>
                             </div>
 
                             <!-- Campo de email -->
                             <div class="mb-3">
                                 <label for="campoEmail" class="form-label">Endereço de email<span style="color: red;"> *</span></label>
-                                <input type="email" class="form-control" id="campoEmail" aria-describedby="descEmail" name="campoEmail">
+                                <input type="email" name="email" class="form-control" id="campoEmail" aria-describedby="descEmail" name="campoEmail">
                                 <div id="descEmail" class="form-text">Seu Email</div>
                             </div>
 
                             <!-- Campo de senha -->
                             <div class="mb-3">
                                 <label for="campoSenha" class="form-label">Senha<span style="color: red;"> *</span></label>
-                                <input type="password" class="form-control" id="campoSenha" maxlength="20" minlength="8" name="campoSenha">
+                                <input type="password" name="senha" class="form-control" id="campoSenha" maxlength="20" minlength="8" name="campoSenha">
                                 <div id="descSenha" class="form-text">
                                     A senha deve ter de 8 a 20 caracteres
                                 </div>

@@ -1,3 +1,63 @@
+<?php
+// Iniciar a sessão
+session_start();
+
+// Verificar se o usuário está logado
+if (!isset($_SESSION['ID_Cliente'])) {
+    // Redirecionar para a página de login se não estiver logado
+    header("Location: /ProjetoPW-Drogaria/login.php");
+    exit();
+}
+
+// Incluir o arquivo da conexão
+include $_SERVER['DOCUMENT_ROOT'] . '/ProjetoPW-Drogaria/controller/conexao.php';
+
+// Obter o ID do cliente logado
+$ID_Cliente = $_SESSION['ID_Cliente'];
+
+// Conectar ao banco de dados
+$conexao = new Conexao();
+$conn = $conexao->getConexao(); // Obter a conexão
+
+// Buscar os dados do cliente
+$stmt = $conn->prepare("SELECT Nome_Cliente, Endereco, CPF, Data_Nascimento, Email FROM Cliente WHERE ID_Cliente = ?");
+$stmt->bind_param("i", $ID_Cliente);
+$stmt->execute();
+$result = $stmt->get_result();
+
+// Verificar se o cliente foi encontrado
+if ($result->num_rows == 1) {
+    $usuario = $result->fetch_assoc(); // Obter os dados do cliente
+} else {
+    // Se o usuário não for encontrado, redireciona para o login
+    header("Location: /ProjetoPW-Drogaria/login.php");
+    exit();
+}
+
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['excluir'])) {
+    // Obter o ID do cliente logado da sessão
+    $ID_Cliente = $_SESSION['ID_Cliente'];
+
+    // Preparar a consulta SQL para exclusão
+    $stmt = $conn->prepare("DELETE FROM Cliente WHERE ID_Cliente = ?");
+    $stmt->bind_param("i", $ID_Cliente);
+
+    if ($stmt->execute()) {
+        // Exclusão bem-sucedida
+        session_destroy(); // Finalizar a sessão do usuário
+        header("Location: /ProjetoPW-Drogaria/login.php?mensagem=conta_excluida");
+        exit();
+    } else {
+        // Caso ocorra algum erro
+        echo "<script>alert('Ocorreu um erro ao excluir a conta. Tente novamente mais tarde.');</script>";
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -129,7 +189,7 @@
                                     <div class="mb-3">
                                         <label for="nomeUsuario" class="form-label"><strong>Nome
                                                 completo:</strong></label>
-                                        <input type="text" class="form-control" id="nomeUsuario" placeholder="Nome de usuário" value=""
+                                        <input type="text" class="form-control" id="nomeUsuario" placeholder="Nome" value="<?php echo htmlspecialchars($usuario['Nome_Cliente']); ?>"
                                             disabled>
                                     </div>
 
@@ -138,13 +198,13 @@
                                         <label for="enderecoUsuario"
                                             class="form-label"><strong>Endereço:</strong></label>
                                         <input type="endereco" class="form-control" id="enderecoUsuario"
-                                            value="" placeholder="rua dos carvalhos 203" disabled>
+                                            value="<?php echo htmlspecialchars($usuario['Endereco']); ?>" placeholder="Seu endereço" disabled>
                                     </div>
 
                                     <!-- CPF -->
                                     <div class="mb-3">
                                         <label for="cpfUsuario" class="form-label"><strong>CPF:</strong></label>
-                                        <input type="cpf" class="form-control" id="cpfUsuario" value="" placeholder="###.456.789-##"
+                                        <input type="cpf" class="form-control" id="cpfUsuario" value="<?php echo htmlspecialchars($usuario['CPF']); ?>" placeholder="###.###.###-##"
                                             disabled>
                                     </div>
 
@@ -153,14 +213,14 @@
                                         <label for="dataUsuario" class="form-label"><strong>Data de
                                                 Nascimento:</strong></label>
                                         <input type="dataUsuario" class="form-control" id="dataUsuario"
-                                            value="" placeholder="23/01/1980" disabled>
+                                            value="<?php echo htmlspecialchars($usuario['Data_Nascimento']); ?>" placeholder="YYYY-MM-DD" disabled>
                                     </div>
 
                                     <!-- Email -->
                                     <div class="mb-3">
                                         <label for="emailUsuario" class="form-label"><strong>Email:</strong></label>
                                         <input type="emailUsuario" class="form-control" id="emailUsuario"
-                                            value="" placeholder="pedroSilva@gmail.com" disabled>
+                                            value="<?php echo htmlspecialchars($usuario['Email']); ?>" placeholder="seuemail@dominio.com" disabled>
                                     </div>
 
                                 </form>
@@ -178,10 +238,11 @@
                                         <button type="button" href="cadastro.php" class="btn btn-success">Cadastro</button>
                                     </a>
 
-                                    <!-- Botão para excluir a conta -->
-                                    <a href="#">
-                                        <button type="button" class="btn btn-danger">Excluir</button>
-                                    </a>
+                                    <form method="POST" action="usuario.php" onsubmit="return confirm('Tem certeza que deseja excluir sua conta? Essa ação não pode ser desfeita.')">
+                                        <!-- Botão para excluir a conta -->
+                                        <a href="#">
+                                            <button type="submit" name="excluir" class="btn btn-danger">Excluir</button>
+                                        </a>
                                 </div>
 
                             </div>

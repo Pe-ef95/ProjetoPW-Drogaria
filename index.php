@@ -121,7 +121,7 @@ if (isset($_SESSION['login_sucesso'])) {
                                 <!-- Botões do usuário - Dentro da tag 'a' trocar a # pelo caminho das respectivas páginas -->
                                 <div class="d-flex ms-auto">
                                     <div class="d-flex align-items-center me-2">
-                                        <a href="usuario.php">
+                                        <a href="login.php">
                                             <button class="btn btn-success" type="button">
                                                 <img class="BtnUCF" src="imgs/user.svg" alt="Usuario">
                                             </button>

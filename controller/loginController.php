@@ -30,7 +30,7 @@ if (isset($_POST['campoEmail']) && isset($_POST['campoSenha'])) {
         $_SESSION['login_sucesso'] = "Login bem-sucedido!";  // Mensagem de login bem-sucedido
 
         // Redirecionar para a página principal ou painel do usuário
-        header("Location: /ProjetoPW-Drogaria/index.php");
+        header("Location: /ProjetoPW-Drogaria/usuario.php");
         exit();
     } else {
         // Login falhou, redireciona para a página de login com mensagem de erro
