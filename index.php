@@ -203,7 +203,9 @@ if (isset($_SESSION['login_sucesso'])) {
                             <p class="card-text mb-0" style="font-size: 18px; font-weight: bolder; font-family: 'Roboto';">R$4,99</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between">
-                            <button type="button" class="btn btn-success favoritoBtn"><img class="cfProd favoritoIcon" src="imgs/curtidos.svg"></button>
+                            <button type="button" class="btn btn-success favoritoBtn">
+                                <img class="cfProd favoritoIcon" src="imgs/curtidos.svg">
+                            </button>
                             <button type="button" class="btn btn-success carrinhoBtn" onclick="adicionarAoCarrinho()">
                                 <img class="cfProd carrinhoIcon" src="imgs/carrinho.svg">
                             </button>

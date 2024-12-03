@@ -120,6 +120,15 @@ class cliente
         // aqui prepara os tipos de dados que o banco irá receber
         $stmt->bind_param('ssssss', $this->Nome_Cliente, $this->Endereco, $this->CPF, $this->Data_nascimento, $this->Email, $this->Senha);
         // serve para executar a linha acima
+        // verifica se a execução do insert foi bem-sucedida
+        if ($stmt->execute()) {
+            // Redireciona para a página de login após a inserção
+            header("Location: /ProjetoPW-Drogaria/login.php");  // ou o caminho relativo da sua página de login
+            exit(); // importante para garantir que o código abaixo não será executado
+        } else {
+            // Se ocorrer um erro na inserção, você pode retornar algum valor ou mensagem
+            return false;
+        }
         return $stmt->execute();
     }
 

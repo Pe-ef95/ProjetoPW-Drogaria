@@ -32,6 +32,8 @@ CREATE TABLE `CategoriaProduto` (
   `Nome_Categoria` VARCHAR(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+INSERT INTO `CategoriaProduto` (`ID_Categoria`, `Nome_Categoria`) VALUES (1, 'Medicamentos');
+
 -- Estrutura da tabela `Cliente`
 CREATE TABLE `Cliente` (
   `ID_Cliente` INT NOT NULL AUTO_INCREMENT,
@@ -46,7 +48,7 @@ CREATE TABLE `Cliente` (
 
 -- Extraindo dados da tabela `Cliente`
 INSERT INTO `Cliente` (`ID_Cliente`, `Nome_Cliente`, `Endereco`, `CPF`, `Data_nascimento`, `Email`, `Senha`) VALUES
-(1, 'Felipe', 'Rua A', 12345678901, '1985-06-15', 'felipe@exemplo.com', 'senha123');
+(1, 'Sergio Melo', 'Rua Menezes Melo Pinto', 12345678901, '1985-06-15', 'sergio.melo@email.com', '12345678');
 
 -- AUTO_INCREMENT para tabela `Cliente`
 ALTER TABLE `Cliente`
@@ -67,6 +69,9 @@ CREATE TABLE `Produto` (
   `Qtd_Estoque` INT NOT NULL,
   FOREIGN KEY (`ID_Categoria`) REFERENCES `CategoriaProduto`(`ID_Categoria`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `Produto` (`ID_Produto`, `ID_Categoria`, `Nome_Produto`, `Preco`, `Qtd_Estoque`) VALUES
+(1, 1, 'Dipirona', 4.99, 300);
 
 -- Estrutura da tabela `cupons`
 CREATE TABLE `cupons` (

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -122,20 +124,12 @@
                                                 <div class="d-flex align-items-center justify-content-between">
                                                     <img src="imgs/actineGelLimpeza.webp" alt="Produto Favorito 1" 
                                                         style="width: 6.25rem; border-radius: 5px; margin-right: 10px;">
-                                                    <span style="flex-grow: 1;">Produto Favorito 1</span>
+                                                        <!-- Aqui vai ficar o nome do produto favoritado -->
+                                                    <span style="flex-grow: 1;">Produto favorito</span>
                                                     <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
                                                 </div>
                                             </li>
-                                            <!-- Produto Favorito 2 -->
-                                            <li class="list-group-item">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <img src="imgs/Dipirona.webp" alt="Produto Favorito 2" 
-                                                        style="width: 6.25rem; border-radius: 5px; margin-right: 10px;">
-                                                    <span style="flex-grow: 1;">Produto Favorito 2</span>
-                                                    <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
-                                                </div>
-                                            </li>
-                                            <!-- Adicione mais itens conforme necessário -->
+
                                         </ul>
                                     </div>
                                 </div>
